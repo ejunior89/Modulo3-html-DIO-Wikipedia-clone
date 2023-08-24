@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fb;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color: blue; text-decoration: none; }
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    text-align: center;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.logo {
+    background-image: url(assets/images/wikipediaLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f9f9fb;
+}
+
+#img-capa,
+#img-paisagem,
+#img-gameplay {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: solid 1px #cdcdcd;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons .icon {
+    color: #555;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons .icon:hover {
+    color: #007bff;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-area: anchors;
+    align-self: flex-start;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-area: sidebar;
+    align-self: flex-start;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
